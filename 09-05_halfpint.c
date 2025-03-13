@@ -21,7 +21,7 @@ int main()
 	{
 		endwin();
 		puts("Unable to create window");
-		return(1);
+		return 1;
 	}
 	wbkgd(tiny,COLOR_PAIR(2));
 	waddstr(tiny,"This is a tiny window\n");
@@ -41,5 +41,5 @@ int main()
 	getch();
 
 	endwin();
-	return(0);
+	return 0;
 }

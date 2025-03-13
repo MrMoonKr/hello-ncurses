@@ -13,7 +13,7 @@ int main()
 	{
 		endwin();
 		puts("Unable to create pad");
-		return(1);
+		return 1;
 	}
 
 	/* fill the pad */
@@ -26,7 +26,7 @@ int main()
 	{
 		endwin();
 		puts("Unable to create subpad");
-		return(1);
+		return 1;
 	}
 
 	addstr("Press Enter to update");
@@ -37,6 +37,5 @@ int main()
 	getch();
 
 	endwin();
-	return(0);
+	return 0;
 }
-

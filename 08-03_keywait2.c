@@ -20,6 +20,6 @@ int main()
 	}
 	
 	endwin();
-	return(0);
+	return 0;
 }
 

@@ -19,7 +19,7 @@ int main()
 	{
 		endwin();
 		puts("Unable to create subwindow");
-		return(1);
+		return 1;
 	}
 
 	/* add text */

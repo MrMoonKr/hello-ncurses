@@ -14,6 +14,6 @@ int main()
 	getch();		/* wait */
 
 	endwin();
-	return(0);
+	return 0;
 }
 

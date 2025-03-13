@@ -5,7 +5,7 @@ int main()
 	chtype string[] = {
 		'H' | A_BOLD, 'e', 'l' | A_REVERSE,
 		'l' | A_REVERSE, 'o', '!' | A_UNDERLINE,
-		0
+		'\0'
 	};
 
 	initscr();
@@ -15,6 +15,6 @@ int main()
 	getch();
 
 	endwin();
-	return(0);
+	return 0;
 }
 

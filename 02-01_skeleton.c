@@ -7,6 +7,6 @@ int main()
 	/* other programming */
 
 	endwin();	/* close Ncurses */
-	return(0);
+	return 0;
 }
 

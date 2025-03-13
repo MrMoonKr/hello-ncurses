@@ -28,7 +28,7 @@ int main()
 	{
 		endwin();
 		puts("Some kind of error creating the windows");
-		return(1);
+		return 1;
 	}
 
 	/* Write to each window */
@@ -55,5 +55,5 @@ int main()
 	getch();
 
 	endwin();
-	return(0);
+	return 0;
 }

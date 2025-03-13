@@ -31,9 +31,9 @@ int main()
 
 	/* overwrite windows */
 	overwrite(red,blue);
-	wbkgd(red,COLOR_PAIR(1) | ' ');
-	wrefresh(red);
-	wrefresh(blue);
+	wbkgd(red,COLOR_PAIR(1) | ' ');		/* solid red */
+	wrefresh(red);						/* refresh red */
+	wrefresh(blue);						/* as well as blue */
 	getch();
 
 	endwin();

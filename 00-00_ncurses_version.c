@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <ncurses.h>
 
 int main()
@@ -8,5 +7,7 @@ int main()
 			NCURSES_VERSION_MINOR,
 			NCURSES_VERSION_PATCH
 		  );
-	return(0);
+	
+	/* clean-up */
+	return 0;
 }

@@ -18,6 +18,6 @@ int main()
 	getch();			/* wait here */
 
 	endwin();			/* clean up NCurses */	
-	return(0);
+	return 0;
 }
 

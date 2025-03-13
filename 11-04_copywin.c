@@ -20,7 +20,7 @@ int main()
 	{
 		endwin();
 		puts("Unable to create windows");
-		return(1);
+		return 1;
 	}
 
 	/* color and fill windows */
@@ -41,5 +41,5 @@ int main()
 	getch();
 
 	endwin();
-	return(0);
+	return 0;
 }

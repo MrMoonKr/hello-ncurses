@@ -12,7 +12,7 @@ int main()
 	{
 		endwin();
 		puts("Unable to create pad");
-		return(1);
+		return 1;
 	}
 
 	addstr("New pad created");
@@ -20,6 +20,5 @@ int main()
 	getch();
 
 	endwin();
-	return(0);
+	return 0;
 }
-

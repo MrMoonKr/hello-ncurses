@@ -16,11 +16,11 @@ int main()
 		printw("Your name is %s. ",name);
 		printw("Is this correct? ");
 		ch = getch();
-	} while( ch != 'y');
+	} while( ch != 'y' );
 	move(2,0);
 	printw("Pleased to meet you, %s\n",name);
 	getch();
 
 	endwin(); 
-	return(0);
+	return 0;
 }

@@ -9,7 +9,7 @@ int main()
 	{
 		endwin();	/* exit Ncurses */
 		puts("Terminal cannot do colors");
-		return(1);
+		return 1;
 	}
 
 /* initialize Ncurses colors */
@@ -17,7 +17,7 @@ int main()
 	{
 		endwin();
 		puts("Unable to start colors.");
-		return(1);
+		return 1;
 	}
 
 /* colors are okay; continue */
@@ -28,5 +28,5 @@ int main()
 	getch();
 
 	endwin();
-	return(0);
+	return 0;
 }

@@ -16,6 +16,6 @@ int main()
 	getnstr(buffer,80);
 	
 	endwin();
-	return(0);
+	return 0;
 }
 
