@@ -1,0 +1,18 @@
+#include <iostream>
+#include <ncurses/ncurses.h>
+//#include <ncursesw/ncurses.h>
+
+int main()
+{
+    setlocale( LC_ALL, "ko_KR.utf8" );
+
+    initscr();
+    addstr("Goodbye, cruel world! \n");
+    refresh();
+    addstr( u8"안녕, 재미있는 abcdefg 프로그래밍 세상 !!!");
+    refresh();
+    getch();
+
+    endwin();
+    return 0;
+}

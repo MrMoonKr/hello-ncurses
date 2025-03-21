@@ -6,13 +6,19 @@ project( Ncurses-Programming
     DESCRIPTION ""
 )
 
+
+set( CURSES_NEED_NCURSES TRUE )
+set( CURSES_NEED_WIDE TRUE )
+
 include( FindCurses )
 include_directories( ${CURSES_INCLUDE_DIR} )
 
-set( CURSES_NEED_NCURSES TRUE )
+
+#set( CURSES_NEED_NCURSES TRUE )
 add_definitions( -DNCURSES_STATIC )
 
+add_compile_options( -finput-charset=UTF-8 -fexec-charset=UTF-8 )
 
-add_executable( 00_00_box ./src/00_00_box.cpp )
-target_link_libraries( 00_00_box ${CURSES_LIBRARIES} )
+add_subdirectory( ./src/chapter00 )
+add_subdirectory( ./src/chapter01 )
 
