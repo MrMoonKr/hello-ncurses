@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.30 )
 
-project( Ncurses-Chapter02
+project( Ncurses-Chapter03
     LANGUAGES C CXX
     VERSION 0.1.0
     DESCRIPTION ""
