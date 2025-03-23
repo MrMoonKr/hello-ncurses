@@ -8,8 +8,7 @@ int main()
 
     initscr();
     addstr("Goodbye, cruel world! \n");
-    refresh();
-    addstr( u8"안녕, 재미있는 abcdefg 프로그래밍 세상 !!!");
+    addstr( u8"안녕, 재미있는 abcdefg 프로그래밍 세상 !!!\n");
     refresh();
     getch();
 

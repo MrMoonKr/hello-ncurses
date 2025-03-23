@@ -22,4 +22,5 @@ add_compile_options( -finput-charset=UTF-8 -fexec-charset=UTF-8 )
 add_subdirectory( ./src/chapter00 )
 add_subdirectory( ./src/chapter01 )
 add_subdirectory( ./src/chapter02 )
+add_subdirectory( ./src/chapter03 )
 
