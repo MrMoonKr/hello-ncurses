@@ -17,4 +17,7 @@ my_executable( 14_01_mousetest )
 my_executable( 14_02_mspy )
 my_executable( 14_03_clickput )
 my_executable( 14_04_bclick )
+# my_executable( 14_05_mousemovement )
+add_executable( 14_05_mousemovement 14_05_mousemovement.cpp )
+target_link_libraries( 14_05_mousemovement pdcurses )
 
