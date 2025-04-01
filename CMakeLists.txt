@@ -39,6 +39,6 @@ add_subdirectory( ./src/chapter02 )
 # add_subdirectory( ./src/chapter11 )
 # add_subdirectory( ./src/chapter12 )
 # add_subdirectory( ./src/chapter13 )
-# add_subdirectory( ./src/chapter14 )
+add_subdirectory( ./src/chapter14 )
 # add_subdirectory( ./src/chapter15 )
 

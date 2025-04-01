@@ -1,8 +1,9 @@
-#include <ncurses/ncurses.h>
+//#include <ncurses/ncurses.h>
+#include <curses.h>
 
 int main()
 {
-    MEVENT mort;
+    MEVENT event;
     int ch;
 
     initscr();
@@ -17,8 +18,9 @@ int main()
         ch = getch();
         if (ch == KEY_MOUSE)
         {
-            getmouse(&mort);
-            mvaddch(mort.y, mort.x, '*'); /* new statement */
+            //getmouse(&event);
+            nc_getmouse(&event);
+            mvaddch(event.y, event.x, '*'); /* new statement */
             refresh();
             continue;
         }

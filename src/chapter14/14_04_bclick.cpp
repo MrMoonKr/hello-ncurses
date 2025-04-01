@@ -1,8 +1,9 @@
-#include <ncurses/ncurses.h>
+//#include <ncurses/ncurses.h>
+#include <curses.h>
 
 int main()
 {
-    MEVENT mort;
+    MEVENT event;
     int ch;
 
     initscr();
@@ -17,8 +18,9 @@ int main()
         if (ch == KEY_MOUSE)
         {
             clear();
-            getmouse(&mort);
-            switch (mort.bstate)
+            //getmouse(&event);
+            nc_getmouse(&event);
+            switch (event.bstate)
             {
             case BUTTON1_PRESSED:
                 mvaddstr(0, 0, "B1 Press");

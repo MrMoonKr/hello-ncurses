@@ -13,7 +13,7 @@
 // #include <curses.h>
 //#include <ncurses/ncurses.h>
 #ifdef _WIN32
-    #include <pdcurses.h>
+    #include <curses.h> // pdcurses
 #else
     #include <ncurses.h>
 #endif
@@ -23,6 +23,7 @@
 int main()
 {
     initscr();
+
     cbreak();
     noecho();
 
@@ -35,9 +36,8 @@ int main()
     //printf("\033[?1003h\n"); // Makes the terminal report mouse movement events
 
     mouseinterval(0);
-    mousemask(ALL_MOUSE_EVENTS | REPORT_MOUSE_POSITION, NULL);
+    mousemask( ALL_MOUSE_EVENTS | REPORT_MOUSE_POSITION, NULL );
     printf("\033[?1003h\n");
-
 
     for (;;)
     {
@@ -81,6 +81,5 @@ int main()
     printf("\033[?1003l\n"); // Disable mouse movement events, as l = low
 
     endwin();
-
     return 0;
 }
