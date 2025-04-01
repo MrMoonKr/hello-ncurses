@@ -1,0 +1,59 @@
+{
+    "version": 9,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 30,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "msvc-x64-debug-make",
+            "displayName": "msvc-x64-debug-make",
+            "description": "Configuring for msvc 22",
+            "generator": "Visual Studio 17 2022",
+            "binaryDir": "build",
+            "architecture": "x64",
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": {
+                    "type": "STRING",
+                    "value": "cl.exe"
+                },
+                "CMAKE_CXX_COMPILER": {
+                    "type": "STRING",
+                    "value": "cl.exe"
+                },
+                "CMAKE_BUILD_TYPE": {
+                    "type": "STRING",
+                    "value": "Debug"
+                }
+            },
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "msvc-x64-debug",
+            "configurePreset": "msvc-x64-debug-make",
+            "configuration": "Debug",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "msvc-x64-release",
+            "configurePreset": "msvc-x64-debug-make",
+            "configuration": "Release",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        }
+    ]
+}

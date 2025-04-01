@@ -14,13 +14,13 @@ WIP ( Work in Progrss )
 
 ## 개발 및 테스트 환경
 
-유닉스 환경에서 출발한 ncurses 라이브러리 사용을 위해 윈도우에서 MinGW 환경으로 구성합니다  
+유닉스 환경에서 출발한 ncurses 라이브러리 사용을 위해 윈도우에서 ~~MinGW 환경~~ vcpkg에서 pdcurses 패키지 사용으로 구성합니다  
 
 - [개발 환경 구축](https://code.visualstudio.com/docs/cpp/config-mingw)  
 
 - Windows 11 64bit  
 
-- MinGW-w64 via MSYS2
+- ~~MinGW-w64 via MSYS2~~
   ```
   $ pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
   ```
@@ -34,10 +34,15 @@ WIP ( Work in Progrss )
   $ gdb --version
   ```
 
-- ncurses 라이브러리 설치
+- ~~ncurses 라이브러리 설치~~
   ```
   $ pacman -S mingw-w64-ucrt-x86_64-ncurses  
   ```
+
+- Visual Studio Community 2022  
+  - C++를 사용한 데스크톱 개발  
+  - C++를 사용한 게임 개발  
+
 
 - VS Code  
 
@@ -48,15 +53,26 @@ WIP ( Work in Progrss )
     - ...
 
 - CMake  
+  - 설치
+  - ...  
   ```
   $ cmake --version
   ```
 
 - vcpkg  
+  - 설치  
+  - ...  
   ```
   $ vcpkg --version
   $ vcpkg new --application
   ```
+
+- pdcurses
+  ```
+  $ vcpkg --version
+  $ vcpkg add port pdcurses
+  ```
+
 - ...
 
 
