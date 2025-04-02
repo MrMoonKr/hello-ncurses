@@ -11,7 +11,8 @@
 // terminal, with GPM enabled. Perhaps something for the next gist version? :)
 
 // #include <curses.h>
-//#include <ncurses/ncurses.h>
+////#include <ncurses/ncurses.h>
+#include <curses.h>
 #ifdef _WIN32
     #include <curses.h> // pdcurses
 #else

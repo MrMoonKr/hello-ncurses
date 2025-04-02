@@ -1,5 +1,6 @@
 #include <iostream>
-//#include <ncurses/ncurses.h>
+////#include <ncurses/ncurses.h>
+#include <curses.h>
 //#include <ncursesw/ncurses.h>
 #include <curses.h>
 

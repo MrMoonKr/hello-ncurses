@@ -1,5 +1,6 @@
 #define _XOPEN_SOURCE_EXTENDED 1
-#include <ncurses/ncurses.h>
+//#include <ncurses/ncurses.h>
+#include <curses.h>
 #include <locale.h>
 
 int main()

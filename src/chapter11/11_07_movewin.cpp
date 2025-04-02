@@ -1,10 +1,12 @@
-#include <ncurses/ncurses.h>
+//#include <ncurses/ncurses.h>
+#include <curses.h>
 
 int main()
 {
     WINDOW *alpha;
 
     initscr();
+    
     refresh();
 
     /* configure color */

@@ -9,7 +9,8 @@ project( Ncurses-Chapter05
 
 function( my_executable target_name )
     add_executable( ${target_name} ${target_name}.cpp )
-    target_link_libraries( ${target_name} ${CURSES_LIBRARIES} )
+    # target_link_libraries( ${target_name} ${CURSES_LIBRARIES} )
+    target_link_libraries( ${target_name} PRIVATE unofficial::pdcurses::pdcurses )
 endfunction()
 
 

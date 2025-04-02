@@ -1,4 +1,5 @@
-//#include <ncurses/ncurses.h>
+////#include <ncurses/ncurses.h>
+#include <curses.h>
 #include <curses.h>
 
 int main()

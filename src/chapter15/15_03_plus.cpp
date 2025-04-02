@@ -1,4 +1,5 @@
-#include <ncurses/ncurses.h>
+//#include <ncurses/ncurses.h>
+#include <curses.h>
 
 #define HLIN 10
 #define VLIN 5
